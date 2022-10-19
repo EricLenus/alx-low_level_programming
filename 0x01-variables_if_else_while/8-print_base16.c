@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<ctype.h>
 /**
  * main - Hexadecimal
  *
@@ -9,20 +8,12 @@
  */
 int main(void)
 {
-	int digit;
+	char digit;
 
 	for (digit = '0'; digit <= '9'; digit++)
-	{
 		putchar(digit);
-		if (digit == '9')
-		{
-			digit = 'a';
-			for (digit <= 'f'; digit++)
-			{
-				putchar(digit);
-		}
-		break;
-	}
+	for (digit = 'a'; digit <= 'f'; digit++)
+		putchar(digit);
 	putchar('\n');
 	return (0);
 }
