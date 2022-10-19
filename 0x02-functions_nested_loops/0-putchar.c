@@ -8,14 +8,14 @@
  */
 int main(void)
 {
-	char abe[] = "_putchar";
+	char school[10] = "_putchar";
 
-	int c;
+	int i;
 
-	for (c = 0; c < 8; c++)
+	for (i = 0; i < 8; i++)
 	{
-		_putchar(abe[c]);
+		_putchar(school[i]);
 	}
-	_putchar('\n');
+	putchar(10);
 	return (0);
 }
