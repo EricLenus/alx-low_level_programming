@@ -2,6 +2,8 @@
 /**
  * main - numberz
  *
+ * description: print 0-9 using putchar
+ *
  * return: 0
  */
 int main(void)
