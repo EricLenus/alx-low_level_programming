@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<ctype.h>
 /**
  * main - smile in the mirror
  *
@@ -8,11 +9,11 @@
  */
 int main(void)
 {
-	char ch = 'z';
+	int letter;
 
-	while (ch >= 'a')
+	for (letter = 'z'; letter >= 'a'; letter--)
 	{
-		putchar(ch);
+		putchar(letter);
 	}
 	putchar('\n');
 	return (0);
