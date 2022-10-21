@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main -test functio t
+ * main -test function
  *
- * Description -test function
+ * Description: -test function
  *
- * return:0
+ * return: 0
  */
 
 int main(void)
