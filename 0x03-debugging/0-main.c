@@ -5,7 +5,7 @@
  *
  * Description: -test function
  *
- * return: 0
+ * Return: 0
  */
 
 int main(void)
