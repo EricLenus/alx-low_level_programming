@@ -3,7 +3,7 @@
 /**
  * main -test function
  *
- * Description: -test function
+ * Description: -Test function
  *
  * Return: 0
  */
