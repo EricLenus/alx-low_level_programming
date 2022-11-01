@@ -10,10 +10,12 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned char index;
-	unsigned char *memory = s, value = b;
+	unsigned int i = 0;
 
-	for (index = 0; index < n; index++)
-		memory[index] = value;
-	return (memory);
+	while (i < n)
+	{
+		*(s + i) = b;
+		i++;
+	}
+	return (s);
 }
