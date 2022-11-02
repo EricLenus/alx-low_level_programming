@@ -1,9 +1,10 @@
 #include "main.h"
+
 /**
  * _strstr - entry point
  * @haystack: input
  * @needle: input
- * Return: always 0 (success)
+ * Return: always 0 (Success)
  */
 char *_strstr(char *haystack, char *needle)
 {
@@ -12,7 +13,7 @@ char *_strstr(char *haystack, char *needle)
 		char *l = haystack;
 		char *p = needle;
 
-		while (*l == *p && != '\0')
+		while (*l == *p && *p != '\0')
 		{
 			I++;
 			p++;
