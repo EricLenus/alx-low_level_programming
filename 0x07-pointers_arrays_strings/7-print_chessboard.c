@@ -2,7 +2,7 @@
 
 /**
  * print_chessboard - print a chessboard
- * @a: source matrix
+ * @a: array
  * Return: always 0 (Success)
  */
 void print_chessboard(char (*a)[8])
@@ -16,5 +16,4 @@ void print_chessboard(char (*a)[8])
 
 			_putchar(a[i][j]);
 		_putchar('\n');
-	}
 }
