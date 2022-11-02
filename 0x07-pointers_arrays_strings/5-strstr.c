@@ -1,31 +1,24 @@
 #include "main.h"
-
 /**
- * _strstr - prints the consecutive caracter of s1 that are in s2
- * @haystack: source string
- * @needle: searching string
- * Return: new string
+ * _strstr - entry point
+ * @haystack: input
+ * @needle: input
+ * Return: always 0 (success)
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int i;
-
-	if (*needle == 0)
-		return (haystack);
-
-	while (*haystack)
+	for (; *haystack != '\0'; haystack++)
 	{
-		i = 0;
+		char *l = haystack;
+		char *p = needle;
 
-		if (haystack[i] == needle[i])
+		while (*l == *p && != '\0')
 		{
-			do {
-				if (needle[i + 1] == '\0')
-					return (haystack);
-				i++;
-			} while (haystack[i] == needle[i];
-					}
-					haystack++;
-					}
-					return ('\0');
+			I++;
+			p++;
+		}
+		if (*p == '\0')
+			return (haystack);
+	}
+	return (0);
 }
