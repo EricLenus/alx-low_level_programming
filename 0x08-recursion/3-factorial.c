@@ -14,6 +14,6 @@ int factorial(int n)
 	else if (n < 0)
 		return (-1);
 
-	next = fuctorial(n - 1);
-	return (n * next);
+	next = fuctorial(n - 1)
+		return (n * next);
 }
