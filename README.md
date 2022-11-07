@@ -1,1 +1,1 @@
-More pointers, arrays and strings
+0x0A. C - argc, argv
