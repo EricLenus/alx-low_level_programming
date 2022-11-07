@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	int i, j;
 
-	if (argc == 1)
+	if (argc == 1||argc ==2)
 	{
 		printf("Error\n");
 		return (1);
@@ -22,10 +22,10 @@ int main(int argc, char *argv[])
 	{
 		j = 1;
 
-		for (i = 1; 1 < 3; i++)
+		for (i = 1; i < 3; i++)
 			j *= atoi(argv[i]);
 
-		printf("%\n", j);
+		printf("%d\n", j);
 	}
 	return (0);
 }
