@@ -10,8 +10,8 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int size1 = 0, size2 = 0
-		char *ptr, *ret;
+	unsigned int size1 = 0, size2 = 0;
+	char *ptr, *ret;
 
 	ptr = s1;
 	if (s1)
@@ -36,5 +36,6 @@ char *str_concat(char *s1, char *s2)
 	while (*s2)
 		*ptr++ = *s2++;
 	*ptr = 0;
+
 	return (ret);
 }
