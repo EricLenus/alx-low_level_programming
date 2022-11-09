@@ -6,36 +6,35 @@
  * str_concat - Entry point
  * @s1: string 1
  * @s2: string 2
- * Return: pointer should point to a newly allocated space in memory or NULL
+ * Return: 0
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *strnew = NULL;
-	unsigned int i;
-	int n1;
-	int n2;
-	int count;
+	unsigned int size1 = 0, size2 = 0
+		char *ptr, *ret;
 
-	count = 0;
-	if (s1 == NULL)
+	ptr = s1;
+	if (s1)
+		while (*ptr++)
+			size1++;
+	else
 		s1 = "";
-	if (s2 == NULL)
+
+	ptr = s2;
+	if (s2)
+		while (*ptr++)
+			size2++;
+	else
 		s2 = "";
-	for (n1 = 0; s1[n1] != '\0'; n1++)
-		;
-	for (n2 = 0; s2[n2] != '\0'; n2++)
-		;
-	strnew = (char *)malloc((n1 + n2 + 1) * sizeof(char));
-	if (strnew == NULL)
-	{
+	ret = malloc(size1 + size2 + 1);
+	if (!ret)
 		return (NULL);
-	}
-	for (i = 0; s1[i] != '\0'; i++)
-		strnew[i] = s1[i];
-	for (; s2[count] != '\0'; i++)
-	{
-		strnew[i] = s2[count];
-		count++;
-	}
-	return (strnew);
+
+	ptr = ret;
+	while (*s1)
+		*ptr++ = *s1++;
+	while (*s2)
+		*ptr++ = *s2++;
+	*ptr = 0;
+	return (ret);
 }
