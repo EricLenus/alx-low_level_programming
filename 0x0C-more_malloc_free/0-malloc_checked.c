@@ -5,11 +5,11 @@
 /**
  * malloc_checked - main entry
  * @b: input
- * Return: 0
+ * Return: Always 0
  */
 void *malloc_checked(unsigned int b)
 {
-	void *p;
+	void *b;
 
 	p = malloc(b);
 	if (p == NULL)
