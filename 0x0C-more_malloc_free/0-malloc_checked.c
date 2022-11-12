@@ -4,7 +4,7 @@
 /**
  * malloc_checked - Main Entry
  * @b: input
- * Return: o0
+ * Return: always 0
  */
 void *malloc_checked(unsigned int b)
 {
