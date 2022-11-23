@@ -1,27 +1,15 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - causes an infinite loop
+ * main - Entry point
  *
- * Description: like, comment, subscribe
- *
- * Return: 0
+ * Return: always 0 (o success)
  */
-
 int main(void)
 {
 	int i;
 
-	printf("infinite loop incoming :(\n");
-
 	i = 0;
-	/**
-	 * while (i < 10)
-	 *{
-	 *	putchar(i);
-	 *}
-	 */
-	printf("infinite loop avoided! \\o/\n");
-
+	positive_or_negative(i);
 	return (0);
 }
