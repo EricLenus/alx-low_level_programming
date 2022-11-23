@@ -1,15 +1,24 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - Entry point
  *
- * Return: always 0 (o success)
+ * Return: Aways 0 (success)
  */
 int main(void)
 {
 	int i;
 
+	printf("infinite loop incoming :(\n");
 	i = 0;
-	positive_or_negative(i);
+
+	/**
+	 * while (i < 10)
+	 * {
+	 * putchar(i);
+	 * }
+	*/
+
+	printf("infinite loop avoided! \\o/\n");
 	return (0);
 }
