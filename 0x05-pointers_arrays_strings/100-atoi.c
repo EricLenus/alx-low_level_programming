@@ -2,8 +2,8 @@
 /**
  * _atoi - converts a string to an integer
  * @s: string converted
- * discription _atoi - converting a string to an integer
- * return: int converted from string
+ * description _atoi - converting a string to an integer
+ * Return: int converted from string
  */
 
 int _atoi(char *s)
