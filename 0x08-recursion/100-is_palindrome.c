@@ -1,6 +1,6 @@
 #include "main.h"
 int find_strlen(char *s);
-int check_palindrome(char *s, int len, intt index);
+int check_palindrome(char *s, int len, int index);
 int is_palidrome(char *s);
 
 /**
