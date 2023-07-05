@@ -6,14 +6,16 @@
  *
  * return: always 0
  */
-int is_palidrome(char *s)
-	int len = strlen(str);
+
+int main(void)
+{
+	int r;
 	int l, k;
 
-	for(l = 0, j = len - 1; l < k; itt, j--) {
+	for(l = 0, j = r - 1; l < k; l++, j--)
 		if (str[l] != str[k]){
 			return 0;
 		}
-	}
+
 return 1;
 }
