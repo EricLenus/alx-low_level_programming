@@ -1,22 +1,19 @@
-#include "main.h"
-int find_strlen(char *s);
-int check_palindrome(char *s, int len, int index);
-int is_palidrome(char *s);
+#include"main.h"
+#include <stdio.h>
 
 /**
- * find_strlen - Returns the length of a string.
- * @s: the string to be measured.
- * Return: the length of the string
+ * main - check the code
+ *
+ * return: always 0
  */
-int find_strlen(char *s)
-{
-	int len = 0;
+int is_palidrome(char *s)
+	int len = strlen(str);
+	int l, k;
 
-	if (*(s + len))
-	{
-		len++;
-		len += find_strlen(s + len);
+	for(l = 0, j = len - 1; l < k; itt, j--) {
+		if (str[l] != str[k]){
+			return 0;
+		}
 	}
-
-	return(len);
+return 1;
 }
