@@ -1,36 +1,40 @@
-#include <stdio.h>
+#include "main.h"
 #include <stdlib.h>
-#include <string.h>
-
-char* argstostr(int ac, char** av)
+/**
+ * argstostr - main entry
+ * @ac: int input
+ * @av: double pointer array
+ * Return: 0
+ */
+char *argstostr(int ac, char **av)
 {
-	if (ac == 0 || av == NULL)
-	{
-		return NULL;
-	}
+	int i, n, r = 0, l = 0;
+	char *str;
 
-	int total_length = 0;
-	for (int i = 0;i < ac; i++)
+	if (ac == 0 || av == NULL)
+		return (NULL);
+
+	for (i = 0; i < ac; i++)
 	{
-		total_length += strlen(av[i] + 1;
-				}
-				cha* concatenated = (char*)malloc((total_length + 1) * sizeof(char));
-				if (concatenated == NULL) {
-				return NULL;
-				}
-				int index = 0;
-				for (int i = 0; i <ac; itt) {
-				strcpy(concatenated + index, av[i];
-						index += strlen(av[i]);
-						concatenated[index++] = '\n';
-						}
-						concatenated[index] = '\n';
-						}
-						int main(int argc; char* argv[]) {
-						char* result = argstostr(argc - 1, argv + 1);
-						if (result != NULL) {
-						printf("%s\n", result);
-						free(result);
-						}
-						return 0;
-						}
+		for (n = 0; av[i][n]; n++)
+			l++;
+	}
+	l += ac;
+
+	str = malloc(sizeof(char) * l + 1);
+	if (str == NULL)
+		return (NULL);
+	for (i = 0; i < ac; i++)
+	{
+	for (n = 0; av[i][n]; n++)
+	{
+		str[r] = av[i][n];
+		r++;
+	}
+	if (str[r] == '\0')
+	{
+		str[r++] = '\n';
+	}
+	}
+	return (str);
+}
